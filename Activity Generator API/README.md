@@ -34,4 +34,3 @@ Lessons Learned:
 <p>
 This project ilustrates the use of if/else statements, API fetch requests, object method usage, and semantic HTML. 
 </p>
-
