@@ -7,8 +7,8 @@ results of calculations.
 </p>
 
 <span>
-Link to the project can be found here: <a href="">
-l</a>
+Link to the project can be found here: <a href="https://sciencelogicinc-digital-calculator.netlify.app/">
+https://sciencelogicinc-digital-calculator.netlify.app/</a>
 </span>
 
 <p align="center">
