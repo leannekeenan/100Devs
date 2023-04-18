@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>SpellVaultX - Great Tome of Spells & Magic Items</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <div class="container">
+            <div class="about">
+                <h1>The Great Tome </h1>
+                <p>The great tome can reveal to you answers about magnificent magical items and spectacular spells.  Enter the name of the object you would like to know more about into the tome and click search.</p>
+            </div>
+        
+            <section class="tome-container">
+                <img class="tome" id="tome" src="/assets/tome.png" alt="">
+
+                <div class="tome-content">
+                    <section class="tome-content-left">
+                        <input class="user_input" type="text">
+                        <button class="search">search</button>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td id="obj_name">Obj Name</td> 
+                                </tr>
+                                <tr>
+                                    <td id="obj_effect">Obj Effect Type</td> 
+                                </tr>
+                                <tr>
+                                    <td id="obj-damage">Obj Damage Type</td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+    
+                    <section class="tome-content-right">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td id="obj_img">
+                                        <img src="" alt="Obj Image">
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <td id="obj_description">Obj Description</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+
+            </section>
+        </div>
+		
+		
+
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
