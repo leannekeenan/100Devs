@@ -59,6 +59,6 @@ Projects I have worked on similar to this include:
 
 <ul>
    <li> 
-	<a href="">D&D Dictionary</a>
+	<a href="https://github.com/leannekeenan/100Devs/tree/main/Pokemon%20App%20v1.0">Spell Vault X - the Great Tome</a>
    </li>
 </ul>
