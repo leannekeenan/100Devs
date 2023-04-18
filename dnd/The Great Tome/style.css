@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1627201037957-122575054b28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZHVuZ2VvbnMlMjBhbmQlMjBkcmFnb25zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60') no-repeat;
+    background-position:  center;
+    background-size: cover;
+    display: block;
+    justify-content: center; 
+}
+
+.about {
+    text-align: center;
+    margin: 5% 10%;
+}
+
+.about p {
+    padding-top: 25px;
+}
+
+.container {
+    position: static;
+}
+
+.tome-container {
+    position: relative;
+}
+
+.tome {
+    position: absolute;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.user_input {
+    margin: 5% auto;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+
+.search {
+    margin: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tome-content-left {
+    position: absolute;
+    border: 1px solid red;
+    width: 30%;
+    left: 20.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    margin: 7% auto;
+}
+
+.tome-content-left table {
+    justify-content: flex-end;
+}
+
+
+
+.tome-content-right {
+    position: absolute;
+    border: 1px solid green;
+    width: 30%;
+    right: 19.5%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 7% auto;
+}
+
+
+
