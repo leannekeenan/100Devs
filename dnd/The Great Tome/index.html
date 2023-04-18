@@ -5,7 +5,7 @@
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
 
-		<title>SpellVaultX - Great Tome of Spells & Magic Items</title>
+		<title>SpellVaultX - The Great Tome of Spells</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="style.css">
@@ -13,8 +13,8 @@
 	<body>
         <div class="container">
             <div class="about">
-                <h1>The Great Tome </h1>
-                <p>The great tome can reveal to you answers about magnificent magical items and spectacular spells.  Enter the name of the object you would like to know more about into the tome and click search.</p>
+                <h1>The Great Tome</h1>
+                <p>The Great Tome can give you information on spectacular spells.  Enter the name of the spell you would like to know more about into the tome and click search.</p>
             </div>
         
             <section class="tome-container">
@@ -22,18 +22,25 @@
 
                 <div class="tome-content">
                     <section class="tome-content-left">
-                        <input class="user_input" type="text">
                         <button class="search">search</button>
+                        <input class="user_input" type="text">
+                        
                         <table>
                             <tbody>
                                 <tr>
-                                    <td id="obj_name">Obj Name</td> 
+                                    <td id="obj_name"></td> 
                                 </tr>
                                 <tr>
-                                    <td id="obj_effect">Obj Effect Type</td> 
+                                    <td id="obj_duration"></td> 
                                 </tr>
                                 <tr>
-                                    <td id="obj-damage">Obj Damage Type</td> 
+                                    <td id="obj_damage"></td> 
+                                </tr>
+                                <tr>
+                                    <td id="obj_attack_type"></td> 
+                                </tr>
+                                <tr>
+                                    <td id="obj_attack_range"></td> 
                                 </tr>
                             </tbody>
                         </table>
@@ -42,13 +49,8 @@
                     <section class="tome-content-right">
                         <table>
                             <tbody>
-                                <tr>
-                                    <td id="obj_img">
-                                        <img src="" alt="Obj Image">
-                                    </td> 
-                                </tr>
-                                <tr>
-                                    <td id="obj_description">Obj Description</td>
+                                <tr class="description_container">
+                                    <td class="description" id="obj_description"></td>
                                 </tr>
                             </tbody>
                         </table>

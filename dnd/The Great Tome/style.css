@@ -2,19 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: rgba(29, 18, 13, 0.8);
 }
 
 body {
-    background: url('https://images.unsplash.com/photo-1627201037957-122575054b28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZHVuZ2VvbnMlMjBhbmQlMjBkcmFnb25zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60') no-repeat;
-    background-position:  center;
+    background: url('https://cdna.artstation.com/p/assets/covers/images/016/818/064/large/bogomil-urukov-00.jpg?1553597886') no-repeat;
     background-size: cover;
-    display: block;
-    justify-content: center; 
+    background-position: center;
 }
+
 
 .about {
     text-align: center;
     margin: 5% 10%;
+    background:rgba(160, 154, 146, 0.4);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .about p {
@@ -26,8 +29,14 @@ body {
 }
 
 .tome-container {
+    height: 800px;
     position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    
 }
+
+
 
 .tome {
     position: absolute;
@@ -39,22 +48,24 @@ body {
     margin: 5% auto;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(161, 141, 74);
     width: 90%;
+    text-align: center;
+    padding: 5px;
 }
 
 .search {
-    margin: 15px;
+    margin: 5px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    font-size: 0.75rem;
 }
 
 .tome-content-left {
     position: absolute;
-    border: 1px solid red;
     width: 30%;
-    left: 20.5%;
+    left: 18.75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,11 +80,10 @@ body {
 
 
 
-.tome-content-right {
+.tome-content-right table tbody tr td{
     position: absolute;
-    border: 1px solid green;
     width: 30%;
-    right: 19.5%;  
+    right: 18.5%;  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,4 +92,17 @@ body {
 }
 
 
+
+@media(max-width: 600px) {
+    .tome-container * {
+        font-size: 0.75rem;
+    }
+}
+
+
+@media(max-width: 400px) {
+    .tome-container * {
+        font-size: 0.5rem;
+    }
+}
 
