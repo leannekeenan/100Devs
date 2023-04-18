@@ -59,6 +59,6 @@ Projects I have worked on similar to this include:
 
 <ul>
    <li> 
-	Spell Vault X - the Great Tome <a href="https://github.com/leannekeenan/100Devs/tree/main/Pokemon%20App%20v1.0">https://github.com/leannekeenan/beautésalon</a>
+	Spell Vault X - the Great Tome: <a href="https://github.com/leannekeenan/100Devs/tree/main/Pokemon%20App%20v1.0">https://github.com/leannekeenan/beautésalon</a>
    </li>
 </ul>
