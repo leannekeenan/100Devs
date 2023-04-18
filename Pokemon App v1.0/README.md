@@ -1,4 +1,4 @@
-<h1>Pokedex</h1>
+<h1>Pokemon Pokedex</h1>
 
 <p>
 Pokedex is a digital encyclopedia that catalogues information about all the different species of Pokemon. 
