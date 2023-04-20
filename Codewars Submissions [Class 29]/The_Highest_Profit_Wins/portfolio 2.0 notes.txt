@@ -1,0 +1,124 @@
+HTML
+
+
+  <main class="homepage">
+    <img class="logo" src="https://i.ibb.co/y84Fgg4/cover.png">
+    <nav class="mainNav">
+      <a href="#" class="toggle">
+        <span class="toggleBar"></span>
+        <span class="toggleBar"></span>
+        <span class="toggleBar"></span>
+      </a>
+
+      <ul class="mainNav-links-list">
+        <li class="mainNav-link"><a class="mainlink" href="">Home</a></li>
+        <li class="mainNav-link"><a class="mainlink" href="">Who</a></li>
+        <li class="mainNav-link"><a class="mainlink" href="">What</a></li>
+        <li class="mainNav-link"><a class="mainlink" href="">Example</a></li>
+        <li class="mainNav-link"><a class="mainlink" href="">Contact</a></li>
+      </ul>
+    </nav>
+  </main>
+CSS
+
+* {
+  box-sizing: border-box;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+}
+
+.mainNav-links-list {
+  margin: 0;
+  padding: 0;
+  display: flex;/*sets li elements side by side*/
+}
+
+.mainNav-link {
+  list-style: none;
+}
+
+.mainNav-link:hover {
+  border-bottom: 1px solid #642E93;
+}
+
+.mainlink {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.toggle{
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+}
+
+.toggleBar {
+  height: 3px;
+  width: 100%;
+  background-color: #642E93;
+  border-radius: 10px;
+}
+
+
+
+@media (max-width: 700px) {
+  .toggle {
+    display: flex;
+  }
+
+  .mainNav-link {
+    display: none;
+    width: 100%;
+  }
+
+  .mainNav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mainNav-links-list {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .mainNav-link {
+    text-align: center;
+  }
+
+  .mainlink {
+    padding: .5rem;
+  }
+
+  .mainNav-links-list.active {
+    display: flex;
+  }
+}
+
+JS
+const toggle = document.querySelector('.toggle')[0];
+const mainNav = document.querySelector('.mainNav-links-list')[0];
+
+
+toggle.addEventListener('click', () => {
+mainNav.classList.toggle('active');
+})
