@@ -1,0 +1,19 @@
+body {
+    background-color: #e0c286;
+    display: flex;
+    font-size: 20px;
+} 
+button {
+    height: 45px;
+    width: 125px;
+    border-radius: 20px;
+    background-color:#f2e9d7;
+}
+section {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 50px;
+}
+img {
+    height: 200px;
+}
