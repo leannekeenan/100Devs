@@ -20,7 +20,7 @@ This repository holds assignments including:
 
 <ul>
    <li>Propriatary projects assigned through the 100 Devs Agency</li>
-   <li>Eleguent JavaScript Coding Exercises</li>
+   <li>Elequent JavaScript Coding Exercises</li>
    <li>The JS Way Coding Exercises</li>
    <li>Codewars Challenges</li>
 </ul>
