@@ -43,3 +43,7 @@ textarea {
     background-color: #3498db;
     color: #fff;
 }
+
+.span-example {
+    color: red;
+}

@@ -1,0 +1,65 @@
+* {
+    color: black;
+}
+
+body {
+    background: rgb(248, 244, 226);
+    padding: 5rem
+}
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2, h3, .tip {
+    font-size: 1.75rem;
+    color: brown;
+}
+
+.tip {
+    text-decoration: none;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+li a, span {
+    font-size: 1.25rem;
+}
+
+img {
+    display: flex;
+    width: 35%;
+    aspect-ratio: 1;
+    margin: 0 auto;
+
+}
+
+.recipe-by {
+    font-size: 2rem;
+    text-align: center;
+}
+
+li {
+    line-height: 1.75rem;
+
+}
+
+.related {
+    list-style: url('https://api.iconify.design/arcticons:enrecipes.svg?');
+}
+
+.related a:hover {
+    color: brown
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.recipe {
+    color: brown
+}
