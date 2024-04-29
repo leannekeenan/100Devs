@@ -33,6 +33,11 @@ textarea {
     margin-bottom: 10px;
 }
 
+input {
+    border: transparent;
+    background-color: red;
+}
+
 #summary {
     grid-column: span 2;
 }
