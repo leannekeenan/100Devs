@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Jacquard+12&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* make the li's blue, underlined, 15px, and have a gray background  */
+li {
+    color: blue;
+    text-decoration: underline;
+    font-size: 15px;
+    background: grey;
+}
+
+/* make this section have a height of 300px, a light purple background, a gold border that is 5px thick */
+
+header  {
+    height: 300px;
+    background: rgb(240, 186, 240);
+    border: 5px solid gold;
+}
+/* make this h1 30px, gold, centered, and use the Source Sans Pro Font  */
+
+h1 {
+    font-size: 30px;
+    color: gold;
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+}
+
+/*make this footer have a dark brown background, 300px in height, and only 70% width*/
+
+footer {
+    background: rgb(121, 83, 26);
+    height: 300px;
+    width: 70%
+}
+
+/*make this text have a line through it*/
+
+h2 {
+    text-decoration: line-through;
+    color:lime;
+}

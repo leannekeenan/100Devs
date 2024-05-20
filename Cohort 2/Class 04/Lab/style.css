@@ -1,0 +1,21 @@
+body {
+    background:rgb(122, 196, 209);
+    border: 2px solid lime;
+    margin: 3rem;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+img {
+    max-width: 100%; /* Ensures the image doesn't overflow */
+    height: auto; /* Maintains the aspect ratio */
+    flex: 1 1 200px; /* Allows the image to grow and shrink, with a minimum width */
+
+}
+
