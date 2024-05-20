@@ -155,6 +155,7 @@
         <section>
             <ul class="details">
                 <li>To maintain Seperation of Concerns</li>
+                <li>Organization</li>
             </ul>
         </section>
 
@@ -223,9 +224,9 @@
         </section>
         <section>
             <ul class="details">
-                <li><img src="/Cohort 2/Class 04/assets/CSS link.png" alt="" width="325px"></li>
+                <li><img src="/Cohort 2/Class 04/assets/CSS link.png" alt="" width="425px"></li>
                 <li>the "href" can be changed to any name matching the name of the CSS sheet</li>
-                
+                <li>needs to be placed in the head of the HTML document</li>
             </ul>
         </section>
 
@@ -233,14 +234,14 @@
 
         <section>
             <ul class="mainPoints">
-                <li></li>
+                <li>What is the CSS Syntax?</li>
             </ul>
         </section>
         <section>
             <ul class="details">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><img src="/Cohort 2/Class 04/assets/CSS Syntax.png" alt="" width="425px"></li>
+                <li>everything excluding the selector element is the "declaration block"</li>
+                <li>everything including the selector element is called a 'rule'</li>
             </ul>
         </section>
 
@@ -248,14 +249,52 @@
 
         <section>
             <ul class="mainPoints">
-                <li></li>
+                <li>What is the cascade?</li>
             </ul>
         </section>
         <section>
             <ul class="details">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>The ability for a CSS rule to be overritten if :
+                    <ul>
+                        <li>
+                            The specificity value of the selector is higher than its previous rule
+                            <ul>
+                                <li>
+                                    h1 { <br>
+                                        color: red <br>
+                                    } <br>
+                                    <br>
+                                    body main section h1 { <br>
+                                        color: blue <br>
+                                    }
+                                    <br><br>
+                                </li>
+                                <li>This example, while stating the color of the h1 element will be red, it is overwritten and will now be blue as the specificity value is higher on "body main section h1" that "h1" alone</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <span>or</span>
+                        <br><br>
+                        <li>
+                            The order in which the rules are written in the CSS document can overwrite a rule
+                            <ul>
+                                <li>
+                                    h1 { <br>
+                                        color: red; <br>
+                                    }<br>
+                                    <br>
+                                    h1 {<br>
+                                        color: blue; <br>
+                                    }
+                                    <br><br>
+                                </li>
+
+                                <li>This example, while orignally setting the value of h1 ' color to red is overwritten to blue because a second command on the seame selector has been written after, leaving it as the last command to effect the selector</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Essentially, the rules that come after can override rules that came before</li>
             </ul>
         </section>
 
@@ -263,14 +302,45 @@
 
         <section>
             <ul class="mainPoints">
-                <li></li>
+                <li>What are common ways to use color in CSS</li>
             </ul>
         </section>
         <section>
             <ul class="details">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                    Key words
+                    <ul>
+                        <li>"red", "green", "blue"</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Hex Values
+                    <ul>
+                        <li>3 to 6 digit log values from 0-9 or A - F representing a color</li>
+                        <li>#FFFFFF = "white"</li>
+                        <li>#000000 = "black"</li>
+                    </ul>
+                </li>
+
+                <li>
+                    RGBa
+                    <ul>
+                        <li>Red Green Blue alpha</li>
+                        <li>accepts a number between 0 and 255 to represent the amount of red, blue, and green used to renfer a specific color</li>
+                        <li>alpha allows the color opacity to shift from fullt vibrant to transparent</li>
+                    </ul>
+                </li>
+
+                <li>
+                    HSLa
+                    <ul>
+                        <li>Hue Saturation Light alpha</li>
+                        <li>Accepts a number between 0 ans 255, a percentage between 0 and 100 and and percentage or light to change the color</li>
+                        <li>alpha allows the color opacity to shift from fullt vibrant to transparent</li>
+                    </ul>
+                </li>
+
             </ul>
         </section>
 
@@ -278,14 +348,12 @@
 
         <section>
             <ul class="mainPoints">
-                <li></li>
+                <li>What issue arrises when using just keywords for your colors on CSS?</li>
             </ul>
         </section>
         <section>
             <ul class="details">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Limited Selections</li>
             </ul>
         </section>
 
@@ -293,14 +361,33 @@
 
         <section>
             <ul class="mainPoints">
-                <li></li>
+                <li>Whats a font</li>
             </ul>
         </section>
         <section>
             <ul class="details">
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>A file with a specifc styling of text</li>
+                <li>Can get imported into your CSS file then needs to be linked to the element you want it used on for the styling to apply</li>
+                <ul>
+                    <li>
+                        <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Jacquard+12&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+                    </li>
+
+                    <li>
+                     
+                    </li>
+                    <li>
+                        .jacquard-12-regular {<br>
+                            font-family: "Jacquard 12", system-ui;<br>
+                            font-weight: 400;<br>
+                            font-style: normal;<br>
+                          }<br>
+                          
+                    </li>
+                </ul>
+                <li>Gets linked into your HTML file then needs to be linked to the element you want it used on for the styling to apply</li>
             </ul>
         </section>
 
