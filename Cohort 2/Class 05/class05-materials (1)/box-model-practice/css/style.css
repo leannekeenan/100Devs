@@ -1,0 +1,25 @@
+h1 {
+    font-size: 30px;
+    padding-left: 3rem;
+    border: 1px solid red;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 14px 0;
+    border: 10px solid gold;
+    margin: 2rem 0;
+}
+
+span {
+    border: 1px solid black;
+    padding: 5px;
+    color: blue
+}
+
+section {
+    height: 25%;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid purple;
+}

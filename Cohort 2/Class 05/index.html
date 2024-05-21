@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes: Class 05 - Learn CSS Layout in 2022! Free Software Engineering Bootcamp!</title>
+    <link rel="stylesheet" href="/Notepad/style.css">
+    <link rel="stylesheet" href="/Cohort 2/Class 05/style.css">
+</head>
+<body>
+    <header>
+        <h1>#100 Devs Notes</h1>
+        <p>Class 05: Learn CSS Layout in 2022! Free Software Engineering Bootcamp!</p>
+    </header>
+
+    <div id="container">
+
+        <section>
+            <h2>Term / Question</h2>
+            <ul class="mainPoints">
+                <li>What's the Golden Rule</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Definition / Details</h2>
+            <ul class="details">
+                <li>Seperation of Concerns
+                    <ul>
+                        <li>HTML for content & structure</li>
+                        <li>CSS for style</li>
+                        <li>JavaScript for behavior</li>
+                    </ul>
+                </li>
+                <li>helps keep project organized</li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li>Why do we put CSS in a seperate file from HTML</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>To maintain the Golden Rule</li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li>What is the exception to writing CSS in the HTML file</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>When writing emails as they can not access external style sheets</li>
+                <li>Working with companies that rely on speed for site renderng for business (critical path CSS)</li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li>What is critical path CSS</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>CSS wtitten in the HTML file that provides styling for content "above the  fold" of a website
+
+                    <ul>
+                        <li>folld is the height of 100% of the device viewport</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li>How do you link tour CSS file to your HTML?</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>
+                    <img src="\Cohort 2\Class 05\assets\CSS link.png" alt="">
+                </li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li>What is the context of a CSS elements?</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>
+                    <img src="\Cohort 2\Class 05\assets\css syntax.png" alt="">
+                </li>
+                <li>Entire element is called a "rule"</li>
+                <li>A rule is composed of a "selector" and a "declaration block"</li>
+                <li>A "selector" is the tag, class, or id of an element that exists in the HTML document</li>
+                <li>A 'Declaration block" is the grouping of a selectors applied "declaration" within a set of curly braces</li>
+                <li>A "declaration is the pairing of a "property" and "value" that will be applied to a selector</li>
+                <li>A "property" is a pre-existing element within CSS that allows for an elements content to be manipulated and altered based on the effects the property can do</li>
+                <li>A 'value' is the associated utility of a property, used in styling to be applied to a selector.</li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li>What's the cascade?</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>Tags can be overwritten based on the order in which they are written in the CSS file</li>
+                <li>"The last to be applied is what gets applied"</li>
+                <li>"The higher the specificity, the harder to override</li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li>Whats specificity?</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>The value of a selector determined by the tag, class, and id total</li>
+                <li>tags add 1 point, class adds 10 points and id's add 100 points</li>
+                <li>classes can be reused on multiple elements while id's must be unique and can only identify one element</li>
+                <li>adding (!) important adds 1000 points of specificity and should be used only in emergencies </li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li>How do you identify  color in CSS</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>Hard coded words like red and blue</li>
+                <li>RGBa values that accept values between 0 - 255 to represent red blue and green respectively to create shades of color and using the alpha to determine opacity</li>
+                <li>HSLa values that accept 0-255 for a hie, 0-100% for saturation and light, and using the alpha to determine opacity</li>
+                <li>HEX (hexidecimal) values: a 3 - 6 digit value representing the red, blue and gren  values of a color, indicated by using the octothorpe (#)</li>
+            </ul>
+        </section>
+
+         <!---->
+
+         <section>
+            <ul class="mainPoints">
+                <li>How do you get fonts?</li>
+            </ul>
+        </section>
+
+        <section>
+            <ul class="details">
+                <li>Go to "Google Fonts" and either:
+                    <ul>
+                        <li>import the file into your CSS directly</li>
+                        <li>link the font file to your HTML</li>
+                    </ul>
+                </li>
+                <li>Add not only the font choosen,  but a back up font and a basic font to ensure if a machine that can not render your choosen font, there is still an option for styling</li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li>How to use selector relationships in CSS?</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>the "parent > child" relationship illustrates that a direct decendant (child) is being targeted within another element (parent) and only within the parent.</li>
+                
+                <li>the "parent child" relationship illustrates a non-direct decendant (child) being targeded within another element, reguardless of its nesting within othere elements</li>
+                
+                <li>the "sibling + sibling" relationiship ilustrates a lateral relationship of two elements with the same parent, targeting elements immediately next to each other in the specified order</li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li>What is the box model?</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>The concept that everything in HTML is a box, and the logic behind how these boses take up space on a webpage</li>
+                <li>
+                    <img src="/Cohort 2/Class 05/assets/box model.png" alt="">
+                </li>
+                <li>Every element has the capacity to expand its margin, border, and padding to increase the complete size of the content box taking up space on the webpage</li>
+                <li>said expansions can be uniform across the entire element, or be selective to the left, right, top, or bottom</li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li>Whats margin?</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>a CSS porperty used to move elements around on a page</li>
+                <li>Sets the space between itself and other elements on the page</li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li>What is border?</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>The defineable line between the edge of an element and the neginning of this margin space</li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li>What is padding?</li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li>The whitespace between the content of an element and the outlining border</li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+         <!---->
+
+         <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+         <!---->
+
+         <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+         <!---->
+
+         <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!---->
+
+        <section>
+            <ul class="mainPoints">
+                <li></li>
+            </ul>
+        </section>
+        <section>
+            <ul class="details">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <p></p>
+        </section>
+
+    </div>
+
+    <footer id="footer">
+        &copy; 2024 Leanne Keenan
+    </footer>
+</body>
+<script src="/Notepad/script.js"></script>
+</html>

@@ -1,0 +1,38 @@
+
+header, footer, div {
+    border  : 1px solid grey
+}
+
+header, footer {
+    min-height: 25vh;
+    clear: both;
+}
+
+section div {
+    min-height: 50vh;
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+}
+
+
+header {
+    background: yellow;
+}
+
+
+footer {
+    background: purple;
+}
+
+div:nth-child(1) {
+    background: red;
+}
+
+div:nth-child(2) {
+    background: blue;
+}
+
+div:nth-child(3) {
+    background: green;
+}
